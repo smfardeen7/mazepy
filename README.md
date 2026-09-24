@@ -1,8 +1,14 @@
-# Maze A* Solver
+# Maze Search Visualisation
+
+![Source-derived architecture for Maze Search Visualisation](docs/images/project-overview.png)
+
+**Implementation overview:** A Python coursework exercise in graph traversal. [Source map and scope](docs/PORTFOLIO.md).
+
+The current score uses Euclidean displacement as g, not cumulative path cost. Standard A* shortest-path optimality is not established.
 
 ## Overview
 
-This project implements the A* (A-Star) pathfinding algorithm to solve a maze. It uses the `pyamaze` library to generate the maze and visualize the pathfinding process.
+This CS 580 coursework project uses a priority-queue search to find a route through a maze. It uses the `pyamaze` library to generate the maze and visualize the pathfinding process.
 
 The agent starts at the bottom-right corner and aims to reach the goal at the top-left corner. The algorithm uses:
 
@@ -39,7 +45,7 @@ python h1_mshaik20.py
 
 This will:
 1.  Generate a 10x10 maze.
-2.  Calculate the optimal path using the A* algorithm.
+2.  Calculate a route using the current priority-queue search.
 3.  Open a window showing the maze and the agent traversing the path.
 4.  Display the path length.
 
